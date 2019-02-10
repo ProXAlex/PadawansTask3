@@ -6,23 +6,13 @@ namespace PadawansTask3
 {
     public class MyTests
     {
-        
 
-        [TestCase(0, 60, ExpectedResult = 60)]
+        [TestCase(-28, -16, ExpectedResult = 4)]
+        [TestCase(-16, -28, ExpectedResult = 4)]
+        [TestCase(28, -16, ExpectedResult = 4)]
+        [TestCase(-28, 16, ExpectedResult = 4)]
+        [TestCase(0, 9, ExpectedResult = 9)]
+        [TestCase(9, 0, ExpectedResult = 9)]
         public int GcdTests(int a, int b) => Gcd(a, b);
-
-
-
-        [Test]
-        public void GcdTests_NegativeArguments()
-        {
-            Assert.Throws<ArgumentException>(() => Gcd(-28, 20));
-        }
-
-        [Test]
-        public void GcdTests_ZeroArguments()
-        {
-            Assert.Throws<ArgumentException>(() => Gcd(0, 0));
-        }
     }
 }

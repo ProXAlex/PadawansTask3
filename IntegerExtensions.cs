@@ -7,13 +7,8 @@ namespace PadawansTask3
         public static int Gcd(int a, int b)
         {
 
-            if(a < 0 || b < 0)
-                throw new ArgumentException("Input can't be negative");
-
-            if (a == 0 && b == 0)
-            {
-                throw new ArgumentException("Both argument can't be zero");
-            }
+            a = Math.Abs(a);
+            b = Math.Abs(b);
 
             int Greatest = 0;
             int Smallest = 0;
