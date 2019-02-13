@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="IntegerExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests\MyTests.cs" />
     <Compile Include="Tests\PublicTest.cs" />
   </ItemGroup>
   <ItemGroup>
